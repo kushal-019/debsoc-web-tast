@@ -139,6 +139,8 @@ body{
         margin: auto;
     }
 }
-.result{
+#result{
     display: none;
+    height: 90px;
+    justify-content: center;
 }
