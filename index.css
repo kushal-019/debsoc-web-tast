@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    color: white ;
+    
+}
+body{
+    background-color:rgb(1, 20, 36);
+    min-height:fit-content;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px;
+    padding: 5px;
+}
+.head h3{
+    display: inline;
+}
+.head{
+    margin-top: 15px;
+}
+.links{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.test-btn{
+    float:right;
+    margin-right: 200px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight:bolder;
+}
+.btn{
+    padding: 7px 10px;
+    font-size: medium;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border-radius: 10px;
+}
+.h2{
+    margin: 5vh 5vw 2vh 5vw;
+}
+.main{
+    /* height: 100vh; */
+    min-height: min-content;
+    width: 85vw;
+    margin: 40px auto;
+    /* min-height: fit-content; */
+    background-color: black;
+    overflow: hidden;
+    scrollbar-width:50px;
+}
+.visible{
+    min-height: fit-content;
+}
+.headline,.topic {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vh 5vw 2vh 5vw;
+}
+
+#text1{
+    font-size: xxx-large;
+}
+#text2{
+    font-size: x-large;
+}
+#text3{
+    font-size: xx-large;
+}
+.content, .video{
+    font-size: large;
+    margin: auto 50px;
+}
+.invisible{
+    display: none;
+}
+#readmore , #readless{
+    color: rgb(85, 85, 181);
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+}
+#readless{
+    display: none;
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+.quiz h1{
+    padding:2vh 8vw;
+}
+ .quiz h2, .ans{
+    padding:2vh 11vw;
+}
+.ans{
+    display: block;
+    padding-left: 14vw ;
+}
+#next-btn{
+    float: right;
+    position: relative;
+    top:-2vh;
+    right: 5vw;
+    
+}
+
+
+.quiz{
+    margin-top:15vh ;
+    display: none;
+}
+@media only screen and (max-width:1350px  ){
+    .topic{
+        flex-direction: column-reverse;
+        
+    }
+    .content{
+        margin: 2px;
+    }
+    .vid{
+        padding: auto;
+        width: auto;
+        height: auto;
+    }
+    .video{
+        margin: auto;
+    }
+}
+.result{
+    display: none;
+}
