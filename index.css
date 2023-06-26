@@ -10,12 +10,13 @@ body{
     min-height:fit-content;
 }
 .header{
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin: 0 50px;
-    padding: 5px;
+    position:fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.062);
 }
 .head h3{
     display: inline;
@@ -27,6 +28,10 @@ body{
     text-decoration: none;
     padding: 10px;
     
+}
+.links:hover{
+    background-color:rgba(46, 48, 48, 0.614);
+    border-radius: 15px
 }
 .test-btn{
     float:right;
@@ -63,10 +68,14 @@ body{
 }
 .headline,.topic {
     display: flex;
-    position: relative;
+    /* position: static; */
     flex-direction: row;
     justify-content: space-between;
-    margin: 5vh 5vw 2vh 5vw;
+    margin: 0vh 5vw 2vh 5vw;
+}
+.headline{
+    padding-top: 10vh;
+
 }
 
 #text1{
@@ -75,7 +84,7 @@ body{
 #text2{
     font-size: x-large;
 }
-#text3{
+#text3,#text4{
     font-size: xx-large;
 }
 .content, .video{
@@ -99,6 +108,7 @@ body{
 .main::-webkit-scrollbar{
     display: none;
 }
+
 .quiz h1{
     padding:2vh 8vw;
 }
@@ -109,18 +119,27 @@ body{
     display: block;
     padding-left: 14vw ;
 }
-#next-btn{
+#submit{
     float: right;
     position: relative;
-    top:-2vh;
     right: 5vw;
+    margin: 20px;
     
 }
-
-
 .quiz{
     margin-top:15vh ;
     display: none;
+}
+.qiz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:30px 80px 0 0 ;
+}
+.btn:hover,.test-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 20, 36);
+    border: white 1px solid;
 }
 @media only screen and (max-width:1350px  ){
     .topic{
@@ -139,8 +158,26 @@ body{
         margin: auto;
     }
 }
+@media only screen and (max-width:650px  ){
+    h1, #text1{
+        font-size: 28px;
+    }
+    h2,#text2{
+        font-size: 20px;
+    }
+    .header{
+        flex-direction: column;
+        position:static;
+        background-color: rgb(1, 20, 36);
+    }
+    .btn{
+        float: right;
+    }
+}
 #result{
-    display: none;
+    display:none;
     height: 90px;
-    justify-content: center;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 40px ;
 }
