@@ -31,63 +31,9 @@ time1 = setInterval(()=>{
         sec2=60;
     }
 },1000)
-
-if(sec2==0){
-    clearInterval();
-    let scores =document.getElementById("result");
-    scores.style.display="block";
-    scores.innerHTML="Your Score is "+score+" out of 4.";
-
-}
 })()
 });
 
-let score=0;
-let submit=document.getElementById("submit");
-submit.addEventListener("click",function(){
-    let sol1=document.getElementsByName("answer1");
-    for(i=0;i<4;i++){
-        if (sol1[i].checked){
-            // console.log(sol1[i].value)
-            if(sol1[i].value=="ChatGPT"){
-                score++;
-                break;
-            }
-        }
-    }
-    let sol2=document.getElementsByName("answer2");
-    for(i=0;i<4;i++){
-        if (sol2[i].checked){
-            if(sol2[i].value=="Salvador Dalí and Pixar’s WALL-E"){
-                score++;
-                break;
-            }
-        }
-    }
-    let sol3=document.getElementsByName("answer3");
-    for(i=0;i<4;i++){
-        if (sol3[i].checked){
-            if(sol3[i].value=="Midjourney"){
-                score++;
-                break;
-            }
-        }
-    }
-    let sol4=document.getElementsByName("answer4");
-    for(i=0;i<4;i++){
-        if (sol4[i].checked){
-            if(sol4[i].value=="Diffusion model"){
-                score++;
-                break;
-            }
-        }
-    }
-    let scores =document.getElementById("result");
-    scores.style.display="block";
-    scores.innerHTML="Your Score is "+score+" out of 4.";
-
-    
-});
 let time;
 let timer=document.getElementById("text3");
 (function(){

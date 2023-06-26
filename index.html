@@ -63,47 +63,28 @@
           <div><div class="qiz">
           <h1>quiz</h1> <div id="text4">00:60</div></div>
           <div>
-          <h2 id="ques">1. what is a large language model chatbot developed by OpenAI based on GPT-3.5</h2>
+          <h2 id="ques"></h2>
           <div>
-            <label class="ans" ><input type="radio" name="answer1" value="ChatGPT"> ChatGPT</label>
-            <label class="ans"><input type="radio" name="answer1"> Google</label>
-            <label class="ans"><input type="radio" name="answer1"> Edge</label>
-            <label class="ans"><input type="radio" name="answer1"> Alexa</label>
+            <div class="answer"><input type="radio" name="answer"><label class="ans" for="answer"></label></div>
+            <div class="answer"><input type="radio" name="answer"><label class="ans" for="answer"></label></div>
+            <div class="answer"><input type="radio" name="answer"><label class="ans" for="answer"></label></div>
+            <div class="answer"><input type="radio" name="answer"><label class="ans" for="answer"></label></div>
+            
+             <!-- <button class="ans"></button>
+            <button class="ans"></button>
+            <button class="ans"></button>
+            <button class="ans"></button> -->
           </div>
         </div>
-          <div>
-          <h2 id="ques">2. DALL-E was named after?</h2>
-          <div>
-            <label class="ans"><input type="radio" name="answer2" value="Salvador Dalí and Pixar’s WALL-E">Salvador Dalí and Pixar’s WALL-E</label>
-            <label class="ans"><input type="radio" name="answer2"> Sunder Pichai</label>
-            <label class="ans"><input type="radio" name="answer2">Jeff Bejos</label>
-            <label class="ans"><input type="radio" name="answer2">Bill Gates</label>
-          </div>
-        </div>
-          <div>
-          <h2 id="ques">3. Who created a Discord community with bots that can turn your text into images in less than a minute.</h2>
-          <div>
-            <label class="ans"><input type="radio" name="answer3"> Discord community</label>
-            <label class="ans"><input type="radio" name="answer3" value="Midjourney"> Midjourney</label>
-            <label class="ans"><input type="radio" name="answer3">Image converto</label>
-            <label class="ans"><input type="radio" name="answer3"> Alphabet</label>
-          </div>
-        </div>
-          <div>
-          <h2 id="ques">4. what is a method for creating images from text prompts. It works by adding random noise to a set of training images, then learning how to remove noise to construct the desired image.</h2>
-          <div>
-            <label class="ans"><input type="radio" name="answer4"> ChatGPT</label>
-            <label class="ans"><input type="radio" name="answer4"> Google Scanner</label>
-            <label class="ans"><input type="radio" name="answer4" value="Diffusion model"> Diffusion model</label>
-            <label class="ans"><input type="radio" name="answer4"> Noise remover</label>
-          </div>
-        </div>
-        </div>
+      </div>
+      <button id="pre-btn" class="btn">pre</button>
+      <button id="next-btn" class="btn">next</button>
         <button id="submit" class="btn">Submit</button>
       </div>
       <div class="main result" id="result"></div>
       </main>
     </div>
     <script src="index.js"></script>
+    <script src="index2.js"></script>
   </body>
 </html>

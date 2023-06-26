@@ -78,6 +78,7 @@ body{
 
 }
 
+
 #text1{
     font-size: xxx-large;
 }
@@ -112,17 +113,26 @@ body{
 .quiz h1{
     padding:2vh 8vw;
 }
- .quiz h2, .ans{
+ .quiz h2{
     padding:2vh 11vw;
 }
-.ans{
+.answer{
     display: block;
-    padding-left: 14vw ;
-}
-#submit{
+    padding-left: 14vw;
+    padding-top: 2vh;
+} 
+#submit, #next-btn{
     float: right;
     position: relative;
+    display: none;
     right: 5vw;
+    margin: 20px;
+    
+}
+#pre-btn{
+    float: left;
+    position: relative;
+    left: 5vw;
     margin: 20px;
     
 }
@@ -177,7 +187,10 @@ body{
 #result{
     display:none;
     height: 90px;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     padding-top: 40px ;
+}
+#p_btn{
+    display: none;
 }
